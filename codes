@@ -1,0 +1,89 @@
+JAVA EXERCISES 
+1.	Hello World Program 
+public class Main{
+    public static void main(String args[]){
+        System.out.println("Hello World");
+        
+    }
+}
+
+2. integer number syntax
+public class Main{
+    public static void main(String args[]){
+        int num=9;
+        System.out.println(num);
+        
+    }
+}
+
+3. constant keyword syntax
+public class Main{
+    public static void main(String args[]){
+        final int num=9;
+        System.out.println(num);
+        
+    }
+}
+
+4. Narrowing type casting 
+public class Main{
+    public static void main(String args[]){
+        double num=9.78;
+        int mynum= (int) num;
+        System.out.println(num);
+        System.out.println(mynum);
+        
+    }
+}
+5.Automatic type casting 
+public class Main{
+    public static void main(String args[]){
+        int num=9;
+        double mynum= num;
+        System.out.println(num);
+        System.out.println(mynum);
+        
+    }
+}
+6. printing sum of numbers
+public class Main{
+    public static void main(String args[]){
+        int num=90;
+        int mynum= 88;
+        System.out.println(num+mynum);
+        System.out.println(num+num);
+        System.out.println(mynum+mynum);
+        
+    }
+}
+
+7. Finding the uppercase and lowercase of a string 
+public class Main{
+    public static void main(String args[]){
+        String txt="Hello World";
+        System.out.println(txt.toUpperCase());
+        System.out.println(txt.toLowerCase());
+        
+    }
+}
+
+8. Find the length of the text using length() function
+public class Main{
+    public static void main(String args[]){
+        String txt="Hello World";
+        System.out.println(txt.length());
+       
+        
+    }
+}
+
+9. indexof function
+public class Main{
+    public static void main(String args[]){
+        String txt="Hello World";
+        System.out.println(txt.indexof("World"));
+       
+        
+    }
+}
+
