@@ -1,4 +1,4 @@
-JAVA EXERCISES 
+JAVA EXERCISES (Week 1 + Week 2)
 1.	Hello World Program 
 public class Main{
     public static void main(String args[]){
@@ -7,45 +7,36 @@ public class Main{
     }
 }
 
-2. integer number syntax
+2. indexof function
 public class Main{
     public static void main(String args[]){
-        int num=9;
-        System.out.println(num);
+        String myStr="Hello planet earth, you are a great planet.";
+        System.out.println(myStr.indexof("planet"));
+       
         
     }
 }
 
-3. constant keyword syntax
+3. Find the length of the text using length() function
 public class Main{
     public static void main(String args[]){
-        final int num=9;
-        System.out.println(num);
+        String myStr="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        System.out.println(myStr.length());
+       
+        
+    }
+}
+4. Finding the uppercase and lowercase of a string 
+public class Main{
+    public static void main(String args[]){
+        String txt="Hello World";
+        System.out.println(txt.toUpperCase());
+        System.out.println(txt.toLowerCase());
         
     }
 }
 
-4. Narrowing type casting 
-public class Main{
-    public static void main(String args[]){
-        double num=9.78;
-        int mynum= (int) num;
-        System.out.println(num);
-        System.out.println(mynum);
-        
-    }
-}
-5.Automatic type casting 
-public class Main{
-    public static void main(String args[]){
-        int num=9;
-        double mynum= num;
-        System.out.println(num);
-        System.out.println(mynum);
-        
-    }
-}
-6. printing sum of numbers
+5. printing sum of numbers
 public class Main{
     public static void main(String args[]){
         int num=90;
@@ -56,34 +47,337 @@ public class Main{
         
     }
 }
-
-7. Finding the uppercase and lowercase of a string 
+6.Automatic type casting 
 public class Main{
     public static void main(String args[]){
-        String txt="Hello World";
-        System.out.println(txt.toUpperCase());
-        System.out.println(txt.toLowerCase());
+        int num=9;
+        double mynum= num;
+        System.out.println(num);
+        System.out.println(mynum);
         
     }
 }
 
-8. Find the length of the text using length() function
+7.  Narrowing type casting 
 public class Main{
     public static void main(String args[]){
-        String txt="Hello World";
-        System.out.println(txt.length());
+        double num=9.78;
+        int mynum= (int) num;
+        System.out.println(num);
+        System.out.println(mynum);
+        
+    }
+}
+
+8. constant keyword syntax
+public class Main{
+    public static void main(String args[]){
+        final int num=9;
+        System.out.println(num);
+        
+    }
+}
+
+9. integer number syntax
+public class Main{
+    public static void main(String args[]){
+        int num=9;
+        System.out.println(num);
+        
+    }
+}
+10.	Concatenation of strings
+public class Main{
+    public static void main(String args[]){
+        String firstname="John";
+        String lastname="Doe";
+        System.out.println(firstname+" "+lastname);
+        
+    }
+}
+11.	Concatenation method
+public class Main{
+    public static void main(String args[]){
+        String firstname="John";
+        String lastname="Doe";
+        System.out.println(firstname.concat(lastname));
+        
+    }
+}
+12.	Concatenation of string and integer
+public class Main{
+    public static void main(String args[]){
+        String x="10";
+        int y=20;
+        String z=x+y;
+        System.out.println(z);
+        
+    }
+}
+13.	Escape sequence 
+public class Main{
+    public static void main(String args[]){
+        String x="We are the so-called \"Vikings\" from the north.";
+        System.out.println(x);
+        
+    }
+}
+14.	Max function
+public class Main{
+    public static void main(String args[]){
+        System.out.println(Math.max(5,10));
+        
+    }
+}
+15.	Min function
+public class Main{
+    public static void main(String args[]){
+        System.out.println(Math.min(5,10));
+        
+    }
+}
+16.	Square root 
+public class Main{
+    public static void main(String args[]){
+        System.out.println(Math.sqrt(64));
+        
+    }
+}
+17.	Random function
+public class Main{
+    public static void main(String args[]){
+        System.out.println(Math.random());
+        
+    }
+}
+18.	Boolean keyword
+public class Main{
+    public static void main(String args[]){
+        boolean isJavaFun=true;
+        boolean isFishTasty=false;
+        System.out.println(isJavaFun);
+        System.out.println(isFishTasty);
+        
+    }
+}
+19.	Boolean condition implementation:
+public class Main{
+    public static void main(String args[]){
+        int x=10; int y=9;
+        System.out.println(x==y);
+        
+    }
+}
+20.	Switch statements
+public class Main{
+    public static void main(String args[]){
+    int day = 4;
+    switch (day) {
+      case 1:
+        System.out.println("Monday");
+        break;
+      case 2:
+        System.out.println("Tuesday");
+        break;
+      case 3:
+        System.out.println("Wednesday");
+        break;
+      case 4:
+        System.out.println("Thursday");
+        break;
+      case 5:
+        System.out.println("Friday");
+        break;
+      case 6:
+        System.out.println("Saturday");
+        break;
+      case 7:
+        System.out.println("Sunday");
+        break;
+    }
+}
+}
+21.	While loop
+public class Main {
+  public static void main(String[] args) {
+    int i = 0;
+    while (i < 5) {
+     System.out.println(i);
+      i++;
+    }  
+  }
+}
+22.	Do-while loop
+public class Main {
+ public static void main(String[] args) {
+   int i = 0;
+    do {
+      System.out.println(i);
+      i++;
+    }
+    while (i < 5);  
+  }
+}
+23.	For loop
+public class Main {
+  public static void main(String[] args) {
+    for (int i = 0; i < 5; i++) {
+      System.out.println(i);
+    }  
+  }
+}
+24.	String arrays with for-each condition 
+public class Main {
+ public static void main(String[] args) {
+   String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    for (String i : cars){
+      System.out.println(i);
+    }    
+  }
+}
+25.	Continue keyword
+public class Main{
+  public static void main(String[] args) {
+    for (int i = 0; i < 10; i++) {
+      if (i == 4) {
+        continue;
+      }
+      System.out.println(i);
+    }  
+  }
+}
+26.	Getting input from the user
+import java.util.Scanner; 
+public class Main { 
+public static void main(String[] args) { 
+Scanner myObj = new Scanner(System.in); 
+String userName = myObj.nextLine(); 
+System.out.println("My name is: " + userName); 
+} 
+} 
+
+27.	Basic calculator 
+import java.util.*;
+public class Hello1{
+public static void main(String[] args){
+        Scanner myobj= new Scanner(System.in);
+        int num,a,b;
+        boolean condition;
+        System.out.println("We are here to create a calculator");
+        do{
+          condition=myobj.nextBoolean();
+          num=myobj.nextInt();
+       switch(num){
+        case 1:
+        a= myobj.nextInt();
+        b=myobj.nextInt();
+        System.out.println("Sum is :"+ (a+b));
+        break;
+        case 2:
+        a= myobj.nextInt();
+        b=myobj.nextInt();
+        System.out.println("difference is :"+ (a-b));
+        break;
+        case 3:
+        a= myobj.nextInt();
+        b=myobj.nextInt();
+        System.out.println("Product is :"+ (a*b));
+        break;
+         case 4:
+        a= myobj.nextInt();
+        b=myobj.nextInt();
+        System.out.println("Division  is :"+ (a/b));
+        break;
+         case 5:
+        a= myobj.nextInt();
+        b=myobj.nextInt();
+        System.out.println("Modulus  is :"+ (a%b));
+        break;
        
-        
-    }
-}
 
-9. indexof function
-public class Main{
-    public static void main(String args[]){
-        String txt="Hello World";
-        System.out.println(txt.indexof("World"));
+
+}
        
+       
+}while (condition==true);
+
+}
+} 
+28.	String operations
+public class Hello1{
+    public static void main(String args[]){
+        char[] helloArray={'h','e','l','l','o'};
+        String helloString=new String(helloArray);
+        System.out.println(helloString);
         
     }
 }
+29.	Ternary operators
+public class Hello1 {  
+    public static void main(String args[]){  
+    int x, y;  
+    x = 20;  
+    y = (x == 1) ? 61: 90;  
+    System.out.println("Value of y is: " +  y);  
+    y = (x == 20) ? 61: 90;  
+    System.out.println("Value of y is: " + y);  
+    }  
+    } 
+30.	Absolute function 
+public class Hello1 {
+  public static void main(String[] args) {
+    System.out.println(Math.abs(-4.7));  
+  }
+}
+31.	Getting user input of different datatypes
+import java.util.Scanner; 
+public class Hello1 { 
+public static void main(String[] args) { 
+Scanner obj = new Scanner(System.in); 
+String name = obj.nextLine(); 
+int age=obj.nextInt();
+float salary=obj.nextFloat();
+Boolean condition=obj.nextBoolean();
+System.out.println(name); 
+System.out.println(age); 
+System.out.println(salary); 
+System.out.println(condition); 
+} 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
