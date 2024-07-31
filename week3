@@ -1,0 +1,37 @@
+  java exercise (week-3)
+1. string tokenizer(directly calling it)
+import java.util.StringTokenizer; //import the scanner
+public class Main
+{
+	public static void main(String[] args)
+	{
+StringTokenizer myobj= new StringTokenizer("my name is khan","");
+while(myobj.hasMoreTokens()){
+System.out.println(myobj.nextToken());
+}
+
+
+   
+   
+		
+	}
+}
+
+2. string tokenizer(call all modules in it)
+import java.util.*; //import the scanner
+public class Main
+{
+	public static void main(String[] args)
+	{
+StringTokenizer myobj= new StringTokenizer("my,name,is,khan");
+while(myobj.hasMoreTokens()){
+System.out.println(myobj.nextToken(","));
+}
+
+
+   
+   
+		
+	}
+}
+
