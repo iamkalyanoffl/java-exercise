@@ -35,3 +35,73 @@ System.out.println(myobj.nextToken(","));
 	}
 }
 
+3. string tokenizer(call all modules in it)
+import java.util.*; //import the scanner
+public class Main
+{
+	public static void main(String[] args)
+	{
+StringTokenizer myobj= new StringTokenizer("Demonstrating methods from String Tokenizer class"," ");
+while(myobj.hasMoreTokens()){
+System.out.println(myobj.nextToken());
+}
+
+
+   
+   
+		
+	}
+}
+
+4. hasMoreElements
+import java.util.*; //import the scanner
+public class Main
+{
+	public static void main(String[] args)
+	{
+StringTokenizer myobj= new StringTokenizer("Demonstrating methods from String Tokenizer class"," ");
+while(myobj.hasMoreElements()){
+System.out.println(myobj.nextToken());
+}
+
+
+   
+   
+		
+	}
+}
+
+5. nextElement()
+import java.util.*; //import the scanner
+public class Main
+{
+	public static void main(String[] args)
+	{
+StringTokenizer myobj= new StringTokenizer("Demonstrating methods from String Tokenizer class"," ");
+while(myobj.hasMoreTokens()){
+System.out.println(myobj.nextElement());
+}
+
+
+   
+   
+		
+	}
+}
+
+6. countTokens()
+import java.util.*; 
+public class Main
+{
+	public static void main(String[] args)
+	{
+StringTokenizer myobj= new StringTokenizer("Demonstrating methods from String Tokenizer class"," ");
+System.out.println(myobj.countTokens());
+
+
+
+   
+   
+		
+	}
+}    
